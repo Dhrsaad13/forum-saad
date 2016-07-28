@@ -1,17 +1,17 @@
 <?php
 
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
-$db_name="forum"; // Database name 
-$tbl_name="fquestions"; // Table name 
+$host="localhost"; 
+$username="root"; 
+$password=""; 
+$db_name="forum"; 
+$tbl_name="fquestions"; 
 
-// Connect to server and select databse.
+
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("cannot select DB");
 
 $sql="SELECT * FROM $tbl_name ORDER BY id DESC";
-// OREDER BY id DESC is order result by descending
+
 
 $result=mysql_query($sql);
 ?>
@@ -27,7 +27,7 @@ $result=mysql_query($sql);
 
 <?php
 
-// Start looping table row
+
 while($rows = mysql_fetch_array($result)){
 ?>
 <tr>
@@ -39,7 +39,7 @@ while($rows = mysql_fetch_array($result)){
 </tr>
 
 <?php
-// Exit looping and close connection 
+
 }
 mysql_close();
 ?>
