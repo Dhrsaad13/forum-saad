@@ -1,7 +1,10 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
@@ -35,7 +38,7 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Submit" /> 
+<td><input type="submit" name="Submit" value="Submit" />
 <input type="reset" name="Submit2" value="Reset" /></td>
 </tr>
 </table>
